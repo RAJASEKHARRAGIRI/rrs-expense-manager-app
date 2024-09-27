@@ -1,0 +1,43 @@
+body{
+    /* position: absolute;
+    top: 50%;
+    left: 42%;
+    transform: translate(-50%,-50%); */
+    background-color: #2a9d8f;
+}
+.progress{
+    margin-top: 30%;
+}
+
+.p-progressbar .p-progressbar-value{
+    background: #57bb1c;
+}
+.p-progressbar-label{
+    visibility: hidden
+}
+
+.header {
+	position: absolute;
+    padding-top: 18px;
+     padding-left: 240px;
+
+  text-align: center;
+
+  color: white;
+  font-size: 25px;
+   font-family: Arial;
+   font-weight: 300 !important;
+}
+
+.header1 {
+	position: absolute;
+    margin-top: -65px;
+     padding-left: 110px;
+
+  text-align: center;
+
+  color: white;
+  font-size: 35px;
+   font-family: Arial;
+   font-weight: 500 !important;
+}

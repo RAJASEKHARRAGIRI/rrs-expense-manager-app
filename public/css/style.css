@@ -1,0 +1,347 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif !important;
+    font-size: 0.875rem;
+    opacity: 1;
+    overflow-y: auto;
+    margin: 0;
+}
+
+.footer-text {
+    font-size: 12px;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+a.sidebar-link {
+    padding: .625rem 1.625rem;
+    color: #FFF;
+    display: block;
+    white-space: nowrap;
+    border-left: 3px solid transparent;
+}
+
+
+a.sidebar-link:hover {
+    background-color: rgba(255, 255, 255, .075) !important;
+    /* border-left: 3px solid #3b7ddd; */
+}
+a.active-sidebar{
+    background-color: rgba(255, 255, 255, .075);
+    border-left: 3px solid #7fa0d2;
+}
+
+h4 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.275rem;
+    color: var(--bs-emphasis-color);
+}
+
+/* Layout for admin dashboard skeleton */
+
+.wrapper {
+    align-items: stretch;
+    display: flex;
+    width: 100%;
+}
+
+#sidebar {
+    max-width: 264px;
+    min-width: 264px;
+    background: var(--bs-dark);
+    transition: all 0.35s ease-in-out;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    min-width: 0;
+    overflow: hidden;
+    transition: all 0.35s ease-in-out;
+    width: 100%;
+    background: var(--bs-dark-bg-subtle);
+}
+
+/* Sidebar Elements Style */
+
+.sidebar-logo {
+    padding: 1.15rem;
+}
+
+.sidebar-logo a {
+    color: #e9ecef;
+    font-size: 1.15rem;
+    font-weight: 600;
+}
+
+.sidebar-nav {
+    flex-grow: 1;
+    list-style: none;
+    margin-bottom: 0;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.sidebar-header {
+    color: #e9ecef;
+    font-size: .75rem;
+    padding: 1.5rem 1.5rem .375rem;
+}
+
+a.sidebar-link {
+    padding: .625rem 1.625rem;
+    color: #e9ecef;
+    position: relative;
+    display: block;
+    font-size: 0.875rem;
+}
+
+.sidebar-link[data-bs-toggle="collapse"]::after {
+    border: solid;
+    border-width: 0 .075rem .075rem 0;
+    content: "";
+    display: inline-block;
+    padding: 2px;
+    position: absolute;
+    right: 1.5rem;
+    top: 1.4rem;
+    transform: rotate(-135deg);
+    transition: all .2s ease-out;
+}
+
+.sidebar-link[data-bs-toggle="collapse"].collapsed::after {
+    transform: rotate(45deg);
+    transition: all .2s ease-out;
+}
+
+.avatar {
+    height: 40px;
+    width: 40px;
+}
+
+.avatar-logo{
+    height: 30px;
+    width: 30px;
+}
+
+.navbar-expand .navbar-nav {
+    margin-left: auto;
+}
+
+.content {
+    flex: 1;
+    max-width: 100vw;
+    width: 100vw;
+}
+
+@media (min-width:768px) {
+    .content {
+        max-width: auto;
+        width: auto;
+    }
+}
+
+.card {
+    box-shadow: 0 0 .875rem 0 rgba(34, 46, 60, .05);
+    margin-bottom: 24px;
+}
+
+.illustration {
+    background-color: var(--bs-primary-bg-subtle);
+    color: var(--bs-emphasis-color);
+}
+
+.illustration-img {
+    max-width: 150px;
+    width: 100%;
+}
+
+/* Sidebar Toggle */
+
+#sidebar.collapsed {
+    margin-left: -264px;
+}
+
+/* Footer and Nav */
+
+@media (max-width:767.98px) {
+
+    .js-sidebar {
+        margin-left: -264px;
+    }
+
+    #sidebar.collapsed {
+        margin-left: 0;
+    }
+
+    .navbar,
+    footer {
+        width: 100vw;
+    }
+}
+
+/* Theme Toggler */
+
+.theme-toggle {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-65%);
+    text-align: center;
+    z-index: 10;
+    right: 0;
+    left: auto;
+    border: none;
+    background-color: var(--bs-body-color);
+}
+
+html[data-bs-theme="dark"] .theme-toggle .fa-sun,
+html[data-bs-theme="light"] .theme-toggle .fa-moon {
+    cursor: pointer;
+    padding: 10px;
+    display: block;
+    font-size: 1.25rem;
+    color: #FFF;
+}
+
+html[data-bs-theme="dark"] .theme-toggle .fa-moon {
+    display: none;
+}
+
+html[data-bs-theme="light"] .theme-toggle .fa-sun {
+    display: none;
+}
+
+.custom-hr {
+    border: 0;
+    clear:both;
+    display:block;
+    width: 100%;               
+    background-color:#474747;
+    height: 1px;
+  }
+
+
+/* Login form start*/
+/*------------ Login container ------------*/
+.login-form {
+    background: radial-gradient(white,#c1c1c1)
+}
+.login-form  .box-area{
+    width: 930px;
+}
+/*------------ Right box ------------*/
+.login-form  .right-box{
+    padding:  25px 8px 25px 25px;
+}
+/*------------ Custom Placeholder ------------*/
+.login-form  ::placeholder{
+    font-size: 16px;
+}
+.login-form  .rounded-4{
+    border-radius: 20px;
+}
+.login-form  .rounded-5{
+    border-radius: 30px;
+}
+
+/*------------ For small screens------------*/
+@media only screen and (max-width: 768px){
+    .login-form   .box-area{
+        margin: 0 10px;
+     }
+     .login-form   .left-box{
+        height: 100px;
+        overflow: hidden;
+     }
+     .login-form  .right-box{
+        padding: 20px;
+     }
+
+     .prime_dialog {
+        width: 95vw !important;
+     }
+
+
+}
+
+.login-form .footer {
+    position: fixed;
+    height: 25px;
+    bottom: 0;
+    width: 100%;
+}
+/* Login form end */
+
+.form-control.is-invalid, .was-validated .form-control:invalid {
+    border-color:#dee2e6 !important;
+}
+
+
+.was-validated .form-control:invalid,
+.was-validated .form-control:invalid:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+.was-validated .form-control.is-valid, .was-validated .form-control:valid {
+    border-color:#dee2e6 !important;
+}
+
+.form-custom-styles{
+    border-radius: 5px;
+    padding: 15px 10px;
+    background: white;
+}
+
+.heading__Label {
+    background: #e9e9e9 ;
+    font-weight: 600;
+    width: 27%;
+}
+
+.form-label-class{
+    font-weight: 500;
+}
+
+.p-multiselect-panel .p-multiselect-header .p-multiselect-filter-container .p-inputtext{
+    height: 2rem;
+}
+
+.expenses-form-input {
+    font-size: 1rem !important;
+    padding: 0.5rem !important;
+}
+
+.p-calendar, .p-inputgroup-addon-size  {
+    height: 2.6rem !important;
+}
+
+.custom-mt-10 {
+    margin-bottom: -10px !important;
+}
+
+
+.p-overlaypanel:after, .p-overlaypanel:before{
+    left: unset !important;
+    right: 1.25rem !important;
+    }
+.gridActionIcon {
+    margin: 10px 5px  !important;
+    border-radius: 20px  !important;
+}
