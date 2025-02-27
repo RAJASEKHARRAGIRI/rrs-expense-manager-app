@@ -112,7 +112,7 @@ export default function AppUsersList() {
     }
 
     const genderBodyTemplate = (rowData) => {
-        return rowData?.gender == "male" ? <Tag severity="warning" value="Male" rounded></Tag> : 
+        return rowData?.gender === "male" ? <Tag severity="warning" value="Male" rounded></Tag> : 
         <Tag severity="success" value="Female" rounded></Tag>;
     }
 

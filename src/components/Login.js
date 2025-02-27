@@ -134,7 +134,7 @@ export default function Login({setUser, userInfo}) {
       <div className="footer">
         <div className="row text-center">
           <a className="text-muted footer-text">
-            All copy right reserved @2024 by RRS Creations
+            All copy right reserved @2025 by RRS Creations
           </a>
         </div>
       </div>

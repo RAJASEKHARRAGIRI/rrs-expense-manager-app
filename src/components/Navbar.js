@@ -102,7 +102,7 @@ export default function Navbar({ logoutUser, userInfo}) {
                       <div className="col-8 text-end">
                           <ul className="list-inline">
                               <li className="list-inline-item">
-                                  <a className="text-muted footer-text">All copy right reserved @2024</a>
+                                  <a className="text-muted footer-text">All copy right reserved @2025</a>
                               </li>
                           </ul>
                       </div>

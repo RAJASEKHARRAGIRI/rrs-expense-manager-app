@@ -3,7 +3,7 @@ import { Divider } from 'primereact/divider';
 
 export default function Settings() {
   const [isChecked, setIsChecked] = useState(
-    localStorage.getItem("light") == "set" ? true : false
+    localStorage.getItem("light") === "set" ? true : false
   );
 
   const handleToggle = () => setIsChecked(!isChecked);
@@ -19,7 +19,7 @@ export default function Settings() {
 
   const toggleRootClass = () => {
     const current = document.documentElement.getAttribute("data-bs-theme");
-    const inverted = current == "dark" ? "light" : "dark";
+    const inverted = current === "dark" ? "light" : "dark";
     document.documentElement.setAttribute("data-bs-theme", inverted);
   };
 
