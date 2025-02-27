@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/rrs-expense-manager-app/static/css/main.3203e5ee.css",
+    "main.js": "/rrs-expense-manager-app/static/js/main.3a529805.js",
+    "static/js/642.3c382743.chunk.js": "/rrs-expense-manager-app/static/js/642.3c382743.chunk.js",
+    "static/js/787.ff23de74.chunk.js": "/rrs-expense-manager-app/static/js/787.ff23de74.chunk.js",
+    "static/media/primeicons.svg": "/rrs-expense-manager-app/static/media/primeicons.e1441b135b3ca9ad643c.svg",
+    "static/media/logo.png": "/rrs-expense-manager-app/static/media/logo.088abe3f57b04147bdf4.png",
+    "static/media/2.png": "/rrs-expense-manager-app/static/media/2.4d595ea6bcef265c6366.png",
+    "static/media/1.png": "/rrs-expense-manager-app/static/media/1.76bbc24a93fe542db4cd.png",
+    "static/media/under-construction.png": "/rrs-expense-manager-app/static/media/under-construction.8d443dcded5158b6e1cc.png",
+    "static/media/primeicons.eot": "/rrs-expense-manager-app/static/media/primeicons.d44157bdfa026dc877af.eot",
+    "static/media/primeicons.woff": "/rrs-expense-manager-app/static/media/primeicons.10d3152104f2208ac82a.woff",
+    "static/media/primeicons.ttf": "/rrs-expense-manager-app/static/media/primeicons.ea5358601d0a3fd6670b.ttf",
+    "static/media/404.png": "/rrs-expense-manager-app/static/media/404.b69c2defc3cf85a79a7e.png",
+    "static/media/profile.jpg": "/rrs-expense-manager-app/static/media/profile.b47df605fd6aa3999523.jpg",
+    "static/media/customer-support.jpg": "/rrs-expense-manager-app/static/media/customer-support.a1b9c590cf6c50749f45.jpg",
+    "static/media/primeicons.woff2": "/rrs-expense-manager-app/static/media/primeicons.78172950b335ccdb94e2.woff2",
+    "static/media/profile_girl.jpg": "/rrs-expense-manager-app/static/media/profile_girl.3252946a860ddab43a87.jpg",
+    "index.html": "/rrs-expense-manager-app/index.html",
+    "main.3203e5ee.css.map": "/rrs-expense-manager-app/static/css/main.3203e5ee.css.map",
+    "main.3a529805.js.map": "/rrs-expense-manager-app/static/js/main.3a529805.js.map",
+    "642.3c382743.chunk.js.map": "/rrs-expense-manager-app/static/js/642.3c382743.chunk.js.map",
+    "787.ff23de74.chunk.js.map": "/rrs-expense-manager-app/static/js/787.ff23de74.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3203e5ee.css",
+    "static/js/main.3a529805.js"
+  ]
+}
