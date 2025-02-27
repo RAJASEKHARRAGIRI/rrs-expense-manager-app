@@ -9,7 +9,9 @@ RRS Daily Expense Tracker is a comprehensive financial management system designe
 I built this application using Functional Components with Hooks for a modern and efficient React implementation.
 Advantages:
 ✔ Used functions instead of classes for a cleaner structure.
+
 ✔ Leveraged React Hooks (useState, useEffect, etc.) for state and lifecycle management.
+
 ✔ Ensured better readability, reusability, and performance.
 This approach makes the application simpler, faster, and easier to maintain. 
 
