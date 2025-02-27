@@ -1,4 +1,4 @@
-# Daily Expense Tracker System
+# RRS Daily Expense Tracker System
 
 ## Overview
 It doesn't matter how much money you earn, what matters is how much you save. Use RRS Expenses Manager to track your expenses & it is simple way to manage your personal finances.
