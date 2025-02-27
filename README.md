@@ -27,13 +27,13 @@ In the project directory, you can run:
 ## Project Screenshots
 ### Login & Registration Page: 
 A secure and user-friendly interface for authentication, enabling users to register, log in, and access their expense management system seamlessly.
-![loginpage](https://github.com/user-attachments/assets/3a8d1564-7e14-4a64-81f5-643df141fb16)
+<img width="600" alt="image" src="https://github.com/user-attachments/assets/83438a34-c2f6-40bb-b6d5-34c9d6a740e0" />
 ### Home Page: 
 A visually engaging dashboard featuring interactive pie charts that provide a clear overview of expense details for better financial tracking.
-<img width="959" alt="image" src="https://github.com/user-attachments/assets/f76dad91-ea22-4c0a-933f-c06c0a796a4c" />
+<img width="600" alt="image" src="https://github.com/user-attachments/assets/f76dad91-ea22-4c0a-933f-c06c0a796a4c" />
 ### Expenses Management Page: 
 A comprehensive interface for tracking daily expenses, allowing users to efficiently add, edit, and delete expense entries. Includes advanced filtering options for better expense management and analysis.
-<img width="959" alt="image" src="https://github.com/user-attachments/assets/5bae0cea-c30d-4e7e-93b1-a82fb1c2db78" />
+<img width="600" alt="image" src="https://github.com/user-attachments/assets/5bae0cea-c30d-4e7e-93b1-a82fb1c2db78" />
 
 
 ## Contact
