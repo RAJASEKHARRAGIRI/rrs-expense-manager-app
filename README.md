@@ -1,70 +1,85 @@
-# Getting Started with Create React App
+# RRS Daily Expense Tracker System
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
+It doesn't matter how much money you earn, what matters is how much you save. Use RRS Expenses Manager to track your expenses & it is simple way to manage your personal finances.
+“RRS Expenses Manager - Just Perfect!”.
 
-## Available Scripts
+RRS Daily Expense Tracker is a comprehensive financial management system designed to help users efficiently track, manage, and analyze their daily expenses. With an intuitive dashboard, detailed expense categorization, and robust user management, it ensures seamless financial tracking. Key features include expense logging, advanced filtering, budget management, customizable themes, and secure authentication. The system enhances user experience through interactive visualizations, real-time updates, and personalized settings, making expense tracking effortless and insightful.
 
-In the project directory, you can run:
+I built this application using Functional Components with Hooks for a modern and efficient React implementation.
 
-### `npm start`
+<b>Advantages:</b><br>
+✔ Used functions instead of classes for a cleaner structure.<br>
+✔ Leveraged React Hooks (useState, useEffect, etc.) for state and lifecycle management.<br>
+✔ Ensured better readability, reusability, and performance.<br>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+This approach makes the application simpler, faster, and easier to maintain. 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Key Features:
+* User Authentication
+* Search Filters
+* Budget Management 
+* Expense Tracking: Record daily expenses with ease, categorizing them for better analysis.
+* Data Visualization (Reports & Charts)
+* Data Persistence: Utilizes a local JSON server (db.json) to store and manage expense data, ensuring data remains consistent across sessions.
+* Dark Mode & Customization
+* Mobile & Web Accessibility
+* User-Friendly Interface: Built with React.js, the application offers a responsive and intuitive user experience.
 
-### `npm test`
+## To run this project Locally
+In the project directory, you can run: 
+* Install Node.js
+* Visual studio code for development
+* Install GIT to clone this repo
+* Install json-server: npm install -g json-server (If required)
+* Terminal-1: json-server --watch db.json --port 8000
+* Terminal-2: npm start
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Project Screenshots
+* #### Login & Registration Page: 
+A secure and user-friendly interface for authentication, enabling users to register, log in, and access their expense management system seamlessly.
 
-### `npm run build`
+<img width="800" alt="image" src="https://github.com/user-attachments/assets/83438a34-c2f6-40bb-b6d5-34c9d6a740e0" />
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* #### Home Page: 
+A visually engaging dashboard featuring interactive pie charts that provide a clear overview of expense details for better financial tracking.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<img width="800" alt="image" src="https://github.com/user-attachments/assets/f76dad91-ea22-4c0a-933f-c06c0a796a4c" />
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+* #### Expenses Management Page: 
+A comprehensive interface for tracking daily expenses, allowing users to efficiently add, edit, and delete expense entries. Includes advanced filtering options for better expense management and analysis.
 
-### `npm run eject`
+<img width="800" alt="image" src="https://github.com/user-attachments/assets/5bae0cea-c30d-4e7e-93b1-a82fb1c2db78" />
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+#### Add/Edit Expenses Form:
+<img width="800" alt="image" src="https://github.com/user-attachments/assets/adc61704-d00f-473d-b0a2-e397fb8a4f7e" />
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+* #### Users Management Page: 
+A centralized interface for managing user profiles, allowing administrators to edit user details, set budgets, and update basic information efficiently.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+<img width="800" alt="image" src="https://github.com/user-attachments/assets/c8164458-e069-4f4f-a289-75b0caa33bf7" />
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+* #### Application settings Page:
+A dedicated interface for customizing application preferences, including theme selection (light/dark mode) and managing notification settings for an optimized user experience.
 
-## Learn More
+<img width="800" alt="image" src="https://github.com/user-attachments/assets/da5c2ddf-c302-4884-a442-c2b2db14c477" />
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+* #### User Profile Page:
+A personalized section displaying the logged-in user's details, allowing them to update their information and manage account settings as needed.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+<img width="800" alt="image" src="https://github.com/user-attachments/assets/680e00be-65bb-4e5d-8b99-3662be697af2" />
 
-### Code Splitting
+* #### Page Not Found Page:
+A fallback page displayed when users navigate to an invalid route or attempt to access a restricted area without the necessary privileges.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+<img width="800" alt="image" src="https://github.com/user-attachments/assets/accf1559-f351-4d84-8de7-75537f28ce2c" />
 
-### Analyzing the Bundle Size
+## Contact
+For any inquiries or suggestions, please reach out to 
+* Github: https://github.com/RAJASEKHARRAGIRI
+* LinkedIn: https://www.linkedin.com/in/rajasekhar-ragiri/
+  
+## License
+This project is proprietary software and is licensed under the RRS Creations. Unauthorized copying, modification, distribution, or use of this project without explicit permission from RRS Creations is strictly prohibited.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+For more details, please refer to the LICENSE file.
