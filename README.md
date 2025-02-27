@@ -24,6 +24,10 @@ In the project directory, you can run:
 * Terminal-1: json-server --watch db.json --port 8000
 * Terminal-2: npm start
 
+## Project Screenshots
+<img width="959" alt="image" src="https://github.com/user-attachments/assets/f76dad91-ea22-4c0a-933f-c06c0a796a4c" />
+
+
 ## Contact
 For any inquiries or suggestions, please reach out to 
 * Github: https://github.com/RAJASEKHARRAGIRI
