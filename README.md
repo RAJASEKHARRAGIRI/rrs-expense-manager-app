@@ -7,10 +7,12 @@ It doesn't matter how much money you earn, what matters is how much you save. Us
 RRS Daily Expense Tracker is a comprehensive financial management system designed to help users efficiently track, manage, and analyze their daily expenses. With an intuitive dashboard, detailed expense categorization, and robust user management, it ensures seamless financial tracking. Key features include expense logging, advanced filtering, budget management, customizable themes, and secure authentication. The system enhances user experience through interactive visualizations, real-time updates, and personalized settings, making expense tracking effortless and insightful.
 
 I built this application using Functional Components with Hooks for a modern and efficient React implementation.
+
 Advantages:<br>
 ✔ Used functions instead of classes for a cleaner structure.<br>
 ✔ Leveraged React Hooks (useState, useEffect, etc.) for state and lifecycle management.<br>
 ✔ Ensured better readability, reusability, and performance.<br>
+
 This approach makes the application simpler, faster, and easier to maintain. 
 
 ## Key Features:
