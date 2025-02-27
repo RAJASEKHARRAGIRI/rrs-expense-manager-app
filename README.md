@@ -39,26 +39,29 @@ A visually engaging dashboard featuring interactive pie charts that provide a cl
 A comprehensive interface for tracking daily expenses, allowing users to efficiently add, edit, and delete expense entries. Includes advanced filtering options for better expense management and analysis.
 
 <img width="800" alt="image" src="https://github.com/user-attachments/assets/5bae0cea-c30d-4e7e-93b1-a82fb1c2db78" />
+
 #### Add/Edit Expenses Form:
 <img width="800" alt="image" src="https://github.com/user-attachments/assets/adc61704-d00f-473d-b0a2-e397fb8a4f7e" />
 
 * #### Users Management Page: 
 A centralized interface for managing user profiles, allowing administrators to edit user details, set budgets, and update basic information efficiently.
 
-<img width="959" alt="image" src="https://github.com/user-attachments/assets/c8164458-e069-4f4f-a289-75b0caa33bf7" />
-* ### Application settings Page:
+<img width="800" alt="image" src="https://github.com/user-attachments/assets/c8164458-e069-4f4f-a289-75b0caa33bf7" />
+
+* #### Application settings Page:
 A dedicated interface for customizing application preferences, including theme selection (light/dark mode) and managing notification settings for an optimized user experience.
 
-<img width="959" alt="image" src="https://github.com/user-attachments/assets/da5c2ddf-c302-4884-a442-c2b2db14c477" />
-* ### User Profile Page:
+<img width="800" alt="image" src="https://github.com/user-attachments/assets/da5c2ddf-c302-4884-a442-c2b2db14c477" />
+
+* #### User Profile Page:
 A personalized section displaying the logged-in user's details, allowing them to update their information and manage account settings as needed.
 
-<img width="959" alt="image" src="https://github.com/user-attachments/assets/680e00be-65bb-4e5d-8b99-3662be697af2" />
-* ### Page Not Found Page:
+<img width="800" alt="image" src="https://github.com/user-attachments/assets/680e00be-65bb-4e5d-8b99-3662be697af2" />
+
+* #### Page Not Found Page:
 A fallback page displayed when users navigate to an invalid route or attempt to access a restricted area without the necessary privileges.
 
-<img width="959" alt="image" src="https://github.com/user-attachments/assets/accf1559-f351-4d84-8de7-75537f28ce2c" />
-
+<img width="800" alt="image" src="https://github.com/user-attachments/assets/accf1559-f351-4d84-8de7-75537f28ce2c" />
 
 ## Contact
 For any inquiries or suggestions, please reach out to 
