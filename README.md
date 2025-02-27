@@ -4,6 +4,8 @@
 It doesn't matter how much money you earn, what matters is how much you save. Use RRS Expenses Manager to track your expenses & it is simple way to manage your personal finances.
 “RRS Expenses Manager - Just Perfect!”.
 
+RRS Daily Expense Tracker is a comprehensive financial management system designed to help users efficiently track, manage, and analyze their daily expenses. With an intuitive dashboard, detailed expense categorization, and robust user management, it ensures seamless financial tracking. Key features include expense logging, advanced filtering, budget management, customizable themes, and secure authentication. The system enhances user experience through interactive visualizations, real-time updates, and personalized settings, making expense tracking effortless and insightful.
+
 ## Key Features:
 * User Authentication
 * Search Filters
