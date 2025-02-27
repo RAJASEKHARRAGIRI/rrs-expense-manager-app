@@ -34,7 +34,8 @@ In the project directory, you can run:
 * Install json-server: npm install -g json-server (If required)
 * Terminal-1: json-server --watch db.json --port 8000
 * Terminal-2: npm start<br>
-Note: To deploy new changes in GITHUB, Push your changes and then RUN: <b>npm run deploy</b>
+Note: To deploy new changes in GITHUB, Push your changes and then RUN: <b>npm run deploy</b> <br>
+Follow this for more details: https://www.geeksforgeeks.org/deployment-of-react-application-using-github-pages/
 
 ## Project Screenshots
 * #### Login & Registration Page: 
