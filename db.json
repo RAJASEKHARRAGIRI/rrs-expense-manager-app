@@ -1,7 +1,7 @@
 {
   "users": [
     {
-      "id": 1,
+      "id": "1",
       "userName": "admin",
       "fullName": "Ragiri Raja Sekhar",
       "password": "rrs63",
@@ -13,7 +13,7 @@
       "updatedOn": "02/19/2024 08:28:30"
     },
     {
-      "id": 2,
+      "id": "2",
       "userName": "swathi",
       "fullName": "Swathi Mangala",
       "password": "swathi",
@@ -25,7 +25,7 @@
       "updatedOn": "12/01/2024 08:03:21"
     },
     {
-      "id": 3,
+      "id": "3",
       "userName": "kavi",
       "fullName": "Kavitha Ragiri",
       "password": "kavi",
@@ -37,7 +37,7 @@
       "updatedOn": "02/01/2024 11:15:41"
     },
     {
-      "id": 4,
+      "id": "4",
       "userName": "asif",
       "fullName": "Asif Udayagiri",
       "password": "asif",
@@ -49,7 +49,7 @@
       "updatedOn": "04/01/2024 04:50:26"
     },
     {
-      "id": 5,
+      "id": "5",
       "userName": "linga",
       "fullName": "Ragiri Lingamma",
       "password": "linga123",
@@ -61,7 +61,7 @@
       "updatedOn": "12/01/2024 08:00:45"
     },
     {
-      "id": 6,
+      "id": "6",
       "userName": "ramanji",
       "fullName": "Ramanji",
       "password": "ram123",
@@ -73,7 +73,7 @@
       "updatedOn": "01/13/2024 02:10:48"
     },
     {
-      "id": 7,
+      "id": "7",
       "userName": "rrr",
       "fullName": "Ram Ravaan Ragiri",
       "password": "ram123",
@@ -85,7 +85,7 @@
       "updatedOn": "01/13/2024 02:10:54"
     },
     {
-      "id": 8,
+      "id": "8",
       "userName": "ravi",
       "fullName": "Ravi teja",
       "password": "ravi123",
@@ -97,7 +97,7 @@
       "updatedOn": "03/07/2024 11:05:37"
     },
     {
-      "id": 9,
+      "id": "9",
       "userName": "srinu",
       "fullName": "Srinu",
       "password": "srinu123",
@@ -109,7 +109,7 @@
       "updatedOn": "01/13/2024 02:11:09"
     },
     {
-      "id": 10,
+      "id": "10",
       "userName": "naga",
       "fullName": "Nagarjuna",
       "password": "naga123",
@@ -130,7 +130,7 @@
       "location": "",
       "salary": "",
       "updatedOn": "01/13/2024 02:09:25",
-      "id": 11
+      "id": "11"
     },
     {
       "userName": "manoj",
@@ -142,10 +142,10 @@
       "location": "",
       "salary": "",
       "updatedOn": "01/23/2024 06:44:56",
-      "id": 12
+      "id": "12"
     },
     {
-      "id": 13,
+      "id": "13",
       "userName": "prathap",
       "fullName": "Prathap",
       "password": "prathap@123",
@@ -155,140 +155,42 @@
       "location": "",
       "salary": "",
       "updatedOn": "02/19/2024 09:00:36"
+    },
+    {
+      "id": "298b",
+      "userName": "12345",
+      "fullName": "Kavitha ",
+      "password": "12345",
+      "email": "ragirikavitha877@gmail.com",
+      "gender": "female",
+      "phoneNumber": "787876898",
+      "location": "bangalore",
+      "salary": "50000",
+      "updatedOn": "03/02/2025 10:07:07"
     }
   ],
   "expenses": [
     {
-      "shopName": "NRPalli Shop",
-      "date": "2024-01-24T18:30:00.000Z",
-      "category": "vegetables,kiranaShop,dairy",
-      "groceries": "[{\"name\":\"Milk\",\"code\":\"MLK\",\"category\":\"dairy\"},{\"name\":\"Jaggery\",\"code\":\"JGRY\",\"category\":\"kiranaShop\"},{\"name\":\"Sugar\",\"code\":\"SGR\",\"category\":\"kiranaShop\"},{\"name\":\"Oil\",\"code\":\"OIL\",\"category\":\"kiranaShop\"},{\"name\":\"Brush\",\"code\":\"BRSH\",\"category\":\"kiranaShop\"},{\"name\":\"Paste\",\"code\":\"PST\",\"category\":\"kiranaShop\"}]",
-      "amount": 45,
-      "paymentType": "Online",
-      "notes": "test",
-      "updatedOn": "01/23/2024 03:03:04",
-      "id": 1
-    },
-    {
-      "shopName": "kanyaka Market",
-      "date": "2024-01-18T18:30:00.000Z",
-      "category": "vegetables,kiranaShop,dairy",
-      "groceries": "[{\"name\":\"Eggs\",\"code\":\"EGG\",\"category\":\"meats\"},{\"name\":\"Curd\",\"code\":\"CRD\",\"category\":\"dairy\"},{\"name\":\"Tamarind\",\"code\":\"TMRND\",\"category\":\"kiranaShop\"},{\"name\":\"Idli Rava\",\"code\":\"IDLI\",\"category\":\"kiranaShop\"},{\"name\":\"Ragi Flour\",\"code\":\"RAGI\",\"category\":\"kiranaShop\"},{\"name\":\"Sugar\",\"code\":\"SGR\",\"category\":\"kiranaShop\"},{\"name\":\"Jaggery\",\"code\":\"JGRY\",\"category\":\"kiranaShop\"},{\"name\":\"Tumeric Powder\",\"code\":\"TMRC\",\"category\":\"kiranaShop\"},{\"name\":\"Pepper\",\"code\":\"PPR\",\"category\":\"kiranaShop\"}]",
-      "amount": 1219,
-      "paymentType": "Online",
-      "notes": "Shopping",
-      "updatedOn": "03/07/2024 10:57:38",
-      "id": 2
-    },
-    {
-      "shopName": "Thursday market",
-      "date": "2024-01-17T18:30:00.000Z",
-      "category": "vegetables,fruits,meats",
-      "groceries": "[{\"name\":\"Onions\",\"code\":\"ONI\",\"category\":\"vegetables\"},{\"name\":\"Tomatos\",\"code\":\"TOM\",\"category\":\"vegetables\"},{\"name\":\"Chilies\",\"code\":\"CHI\",\"category\":\"vegetables\"},{\"name\":\"Ginger\",\"code\":\"GIN\",\"category\":\"vegetables\"},{\"name\":\"Potato\",\"code\":\"POT\",\"category\":\"vegetables\"},{\"name\":\"Orange\",\"code\":\"ORG\",\"category\":\"fruits\"}]",
-      "amount": 450,
+      "id": "224a",
+      "shopName": "kiran",
+      "date": "2025-03-01T18:30:00.000Z",
+      "category": "fruits,vegetables,meats",
+      "groceries": "[{\"name\":\"Grapes\",\"code\":\"GRP\",\"category\":\"fruits\"},{\"name\":\"Banana\",\"code\":\"BNA\",\"category\":\"fruits\"},{\"name\":\"Mango\",\"code\":\"MNG\",\"category\":\"fruits\"}]",
+      "amount": 230,
       "paymentType": "Cash",
-      "notes": "weekly veges",
-      "updatedOn": "01/23/2024 04:51:19",
-      "id": 3
+      "notes": "kk",
+      "updatedOn": "03/02/2025 10:42:34"
     },
     {
-      "shopName": "Janatha Shop",
-      "date": "2024-01-08T18:30:00.000Z",
-      "category": ",vegetables",
-      "groceries": "[{\"name\":\"Mango\",\"code\":\"MNG\",\"category\":\"fruits\"},{\"name\":\"Grapes\",\"code\":\"GRP\",\"category\":\"fruits\"}]",
-      "amount": 34,
-      "paymentType": "Cash",
-      "notes": "Things",
-      "updatedOn": "01/22/2024 09:34:49",
-      "id": 5
-    },
-    {
-      "shopName": "Ration shop",
-      "date": "2024-01-22T18:30:00.000Z",
-      "category": "kiranaShop",
-      "groceries": "[{\"name\":\"Rice\",\"code\":\"RIC\",\"category\":\"kiranaShop\"},{\"name\":\"Sugar\",\"code\":\"SGR\",\"category\":\"kiranaShop\"},{\"name\":\"Oil\",\"code\":\"OIL\",\"category\":\"kiranaShop\"}]",
-      "amount": 22,
-      "paymentType": "Cash",
-      "notes": "ration shop",
-      "updatedOn": "01/22/2024 09:35:32",
-      "id": 6
-    },
-    {
-      "shopName": "Amazon Shopping",
-      "date": "2023-12-31T18:30:00.000Z",
-      "category": "kiranaShop",
-      "groceries": "[{\"name\":\"Detergent Powder (Surf/Wheel etc)\",\"code\":\"DTRPWDR\",\"category\":\"kiranaShop\"},{\"name\":\"Soaps\",\"code\":\"SOAP\",\"category\":\"kiranaShop\"},{\"name\":\"Brush\",\"code\":\"BRSH\",\"category\":\"kiranaShop\"}]",
-      "amount": 2500,
+      "shopName": "more",
+      "date": "2025-03-03T18:30:00.000Z",
+      "category": "snacks,kiranaShop",
+      "groceries": "[{\"name\":\"Onions\",\"code\":\"ONI\",\"category\":\"vegetables\"},{\"name\":\"Potato\",\"code\":\"POT\",\"category\":\"vegetables\"}]",
+      "amount": 600,
       "paymentType": "Online",
-      "notes": "In Amazon Offers",
-      "updatedOn": "01/23/2024 03:19:09",
-      "id": 7
-    },
-    {
-      "shopName": "Dmart",
-      "date": "2024-01-05T18:30:00.000Z",
-      "category": "fruits,kiranaShop",
-      "groceries": "[{\"name\":\"Mango\",\"code\":\"MNG\",\"category\":\"fruits\"},{\"name\":\"Banana\",\"code\":\"BNA\",\"category\":\"fruits\"},{\"name\":\"Chili Powder\",\"code\":\"CHIPWDR\",\"category\":\"kiranaShop\"},{\"name\":\"Detergent Powder (Surf/Wheel etc)\",\"code\":\"DTRPWDR\",\"category\":\"kiranaShop\"},{\"name\":\"Soaps\",\"code\":\"SOAP\",\"category\":\"kiranaShop\"},{\"name\":\"Daniya Powder\",\"code\":\"DNYAPWDR\",\"category\":\"kiranaShop\"}]",
-      "amount": 3500,
-      "paymentType": "Online",
-      "notes": "In hyderabad dmart",
-      "updatedOn": "01/23/2024 04:44:04",
-      "id": 8
-    },
-    {
-      "shopName": "test",
-      "date": "2024-01-07T18:30:00.000Z",
-      "category": "meats,dairy,kiranaShop",
-      "groceries": "[{\"name\":\"Grapes\",\"code\":\"GRP\",\"category\":\"fruits\"},{\"name\":\"Onions\",\"code\":\"ONI\",\"category\":\"vegetables\"},{\"name\":\"Tomatos\",\"code\":\"TOM\",\"category\":\"vegetables\"}]",
-      "amount": 100,
-      "paymentType": "Cash",
-      "notes": "dfg",
-      "updatedOn": "03/07/2024 10:57:13",
-      "id": 9
-    },
-    {
-      "shopName": "Flipkart Sale",
-      "date": "2024-01-11T18:30:00.000Z",
-      "category": "kiranaShop",
-      "groceries": "[{\"name\":\"Soaps\",\"code\":\"SOAP\",\"category\":\"kiranaShop\"},{\"name\":\"Maggi/Yippee Noddles\",\"code\":\"MGYPN\",\"category\":\"kiranaShop\"},{\"name\":\"Aashirvaad Atta\",\"code\":\"ASHVRD\",\"category\":\"kiranaShop\"}]",
-      "amount": 680,
-      "paymentType": "Online",
-      "notes": "january flipkart sale",
-      "updatedOn": "01/23/2024 05:14:36",
-      "id": 10
-    },
-    {
-      "shopName": "KFC",
-      "date": "2024-02-17T18:30:00.000Z",
-      "category": "kiranaShop",
-      "groceries": "[{\"name\":\"Chicken\",\"code\":\"CHI\",\"category\":\"meats\"},{\"name\":\"Onions\",\"code\":\"ONI\",\"category\":\"vegetables\"}]",
-      "amount": 4500,
-      "paymentType": "Cash",
-      "notes": "Chicken pizza, wings, Burger",
-      "updatedOn": "02/19/2024 05:58:24",
-      "id": 11
-    },
-    {
-      "shopName": "Mashah Allah Shawarma",
-      "date": "2024-02-10T18:30:00.000Z",
-      "category": "snacks",
-      "groceries": "[{\"name\":\"Shawarma\",\"code\":\"SHWRMA\",\"category\":\"snacks\"}]",
-      "amount": 800,
-      "paymentType": "Online",
-      "notes": "8 shawarmas each one cost 100",
-      "updatedOn": "02/19/2024 08:21:25",
-      "id": 12
-    },
-    {
-      "shopName": "In Village",
-      "date": "2024-03-06T18:30:00.000Z",
-      "category": "vegetables",
-      "groceries": "[{\"name\":\"Tomatos\",\"code\":\"TOM\",\"category\":\"vegetables\"},{\"name\":\"Chilies\",\"code\":\"CHI\",\"category\":\"vegetables\"},{\"name\":\"Lady's finger\",\"code\":\"LDF\",\"category\":\"vegetables\"}]",
-      "amount": 150,
-      "paymentType": "Cash",
-      "notes": "Vegetables purchased in nrpalli",
-      "updatedOn": "03/07/2024 10:56:27",
-      "id": 13
+      "notes": "",
+      "updatedOn": "03/02/2025 10:46:34",
+      "id": "3289"
     }
   ]
 }
