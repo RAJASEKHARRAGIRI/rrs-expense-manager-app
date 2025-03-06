@@ -10,53 +10,79 @@ import { Column } from 'primereact/column';
 import { InputText } from 'primereact/inputtext';
 import { Button } from 'primereact/button';
 import * as AppConstants from "../common/constants";
-import UserModal from "../common/UserModal";
+import ExpenseCategoryModal from "../components/ExpenseCategoryModal";
 import { toast } from 'react-toastify';
 import CommonToastContainer from "../common/ToastAlert"
 import { ProgressBar } from 'primereact/progressbar';
 import { Tag } from 'primereact/tag';
+import { ConfirmDialog, confirmDialog } from 'primereact/confirmdialog';
 
 import '../common/css/DataTable.css';
 
-export default function AppUsersList() {
-    const [customers, setCustomers] = useState(null);
-    const [editCustomer, setEditCustomer] = useState(null);
+export default function ExpenseCategories() {
+    const [categories, setCategories] = useState(null);
+    const [editCategory, setEditCategory] = useState(null);
     
     const [globalFilterValue, setGlobalFilterValue] = useState('');
     const [loading, setLoading] = useState(true);
-
+    let rowId = null;
     useEffect(() => {        
-        fetchUsers();
+        fetchCategories();
     }, []);
 
-    const fetchUsers = () => {
-        fetch(`${AppConstants.jsonServerApiUrl}/users`)
+    const fetchCategories = () => {
+        fetch(`${AppConstants.jsonServerApiUrl}/categories`)
         .then((res) => {
           return res.json();
         })
         .then((res) => {
-            setCustomers(getCustomers(res)); 
+            setCategories(getCategories(res)); 
             setLoading(false) 
         })
         .catch((error) => {      
-          toast.error(`${error.message}, Failed to fetch users.`);
+          toast.error(`${error.message}, Failed to fetch categories.`);
         });
     }
 
-    const getCustomers = (data) => {
+    const getCategories = (data) => {
         return [...data || []].map(d => {
-            d.date = new Date(d.date);
+            d.updatedOn = new Date(d.updatedOn);
             return d;
         });
     }
 
-    const formatCurrency = (value) => {
-        return value.toLocaleString('en-IN', { style: 'currency', currency: 'INR' });
-    }
+    function deleteCategory(event, rowData) {
+        debugger
+            event.preventDefault();
+            rowId = rowData.id
+            confirmDialog({
+              message: (<p>Are you sure you want to delete <b>{rowData.name}</b> ?"</p>),
+              header: 'Confirmation',
+              icon: 'pi pi-exclamation-triangle',
+              defaultFocus: 'accept',
+              accept,
+              reject
+          });
+        }
+    
+        const accept = (id) => {
+          fetch(`${AppConstants.jsonServerApiUrl}/categories/${rowId}`, {
+            method: "DELETE"
+          })
+            .then((res) => {
+              toast.success("Successfully deleted");
+              fetchCategories();
+            })
+            .catch((error) => {
+              toast.error(`${error.message}, failed to delete.`);
+            });
+        }
+    
+        const reject = () => { }
 
     const [filters, setFilters] = useState({
         'global': { value: null, matchMode: FilterMatchMode.CONTAINS },
-        'fullName': { operator: FilterOperator.AND, constraints: [{ value: null, matchMode: FilterMatchMode.STARTS_WITH }] }
+        'name': { operator: FilterOperator.AND, constraints: [{ value: null, matchMode: FilterMatchMode.STARTS_WITH }] }
     });
 
     const onGlobalFilterChange = (e) => {
@@ -71,7 +97,8 @@ export default function AppUsersList() {
     const renderHeader = () => {
         return (
             <div className="flex justify-content-between align-items-center">
-                <h5 className="m-0"></h5>
+                {/* <h5 className="m-0">Expense Categories</h5> */}
+                  <Button label="Add Category" className='p-button-success' onClick={(e) => openCategoryEditModal(e, {}, true)} icon="pi pi-plus"/>
                 <span className="p-input-icon-left" style={{width:"20%"}}>
                     <i className="pi pi-search" />
                     <InputText value={globalFilterValue} onChange={onGlobalFilterChange} placeholder="Search here" className='p-inputtext-sm block' style={{width:"100%"}}/>
@@ -82,7 +109,7 @@ export default function AppUsersList() {
 
     const dateBodyTemplate = (rowData) => {
         return formatDate(rowData.updatedOn);
-    }
+    }   
 
     const formatDate = (value) => {
         value = new Date(value);
@@ -93,68 +120,51 @@ export default function AppUsersList() {
         });
     }
     
-    const balanceBodyTemplate = (rowData) => {        
-        return formatCurrency(+rowData?.salary);
-    }
-
-    const profileStatusBodyTemplate = (rowData) => { 
-        let percentage = 55;
-        if(rowData?.email && rowData?.phoneNumber &&  rowData?.gender && rowData?.location && rowData?.salary) {
-            percentage = 100;
-        } else if ((rowData?.email && rowData?.phoneNumber && rowData?.gender) || rowData?.salary) {
-            percentage = 75;
-        } 
-        return <ProgressBar value={percentage}></ProgressBar>;
-    }
     
     const actionBodyTemplate = (rowData) => {
-        return <Button type="button" className='p-button-secondary' icon="pi pi-user-edit" onClick={(e) => openUserEditModal(e, rowData)}></Button>;
+        return <>
+        <Button type="button" title='Edit Record' className='p-button-secondary gridActionIcon' icon="pi pi-file-edit" onClick={(e) => openCategoryEditModal(e, rowData, false)}></Button>
+         <button type="button" className="btn btn-danger btn-sm gridActionIcon" title='Delete Record' onClick={(e) => deleteCategory(e, rowData)}> <i className="pi pi-trash"></i></button>
+        </>
     }
 
-    const genderBodyTemplate = (rowData) => {
-        return rowData?.gender === "male" ? <Tag severity="warning" value="Male" rounded></Tag> : 
-        <Tag severity="success" value="Female" rounded></Tag>;
-    }
-
-    function openUserEditModal(event, rowData) {
+    function openCategoryEditModal(event, rowData, isAdd) {
         event.preventDefault();
         rowData.showModal = true;
-        setEditCustomer(rowData);
+        rowData.isAdd = isAdd;
+        setEditCategory(rowData);
     }
 
-    const closeUserModal = () => {
-        editCustomer.showModal = false;
-        setEditCustomer(false);
-        fetchUsers();
+    const closeCategoryModal = () => {
+        editCategory.showModal = false;
+        setEditCategory(false);
+        fetchCategories();
       };
 
     const header = renderHeader();
 
     return (
         <>
-           <div className="row">
+         <div className="row">
          <div className="col-sm-8 mb-0  align-items-center justify-content-left">
-            <h4>Registered Users</h4>
+            <h4>Expense Categories</h4>
         </div>
         </div>
-        {editCustomer?.showModal ? <UserModal  userInfo={editCustomer} closeUserModal={closeUserModal}></UserModal> : ''} 
+        {editCategory?.showModal ? <ExpenseCategoryModal  categoryInfo={editCategory} closeCategoryModal={closeCategoryModal}></ExpenseCategoryModal> : ''} 
         <div className="datatable-doc-demo">
             <CommonToastContainer/>
+               <ConfirmDialog />
             <div className="card">
-                <DataTable value={customers} scrollable  paginator className="p-datatable-customers" header={header} rows={5}  size="small"
+                <DataTable value={categories} scrollable  paginator className="p-datatable-customers" header={header} rows={5}  size="small"
                     paginatorTemplate="FirstPageLink PrevPageLink PageLinks NextPageLink LastPageLink CurrentPageReport RowsPerPageDropdown" rowsPerPageOptions={[5,8,10,25,50]}
                     dataKey="id" rowHover  filterDisplay="menu" loading={loading} responsiveLayout="scroll"
-                    filters={filters} globalFilterFields={['fullName', 'phoneNumber','email','gender','location']} emptyMessage="No users found."
+                    filters={filters} globalFilterFields={['name']} emptyMessage="No categories found."
                     currentPageReportTemplate="Showing {first} to {last} of {totalRecords} entries">
 
-                    <Column field="fullName" header="Name" sortable  style={{ minWidth: '14rem' }} />
-                    <Column field="email" header="Email" sortable  style={{ minWidth: '14rem' }} />
-                    <Column field="phoneNumber" header="Phone Number" sortable  style={{ minWidth: '12rem' }} />
-                    <Column field="gender" header="Gender" sortable  style={{ minWidth: '8rem' }} body={genderBodyTemplate} />
-                    <Column field="location" header="Location" sortable  style={{ minWidth: '14rem' }} />
-                    <Column field="salary" header="Salary" sortable  dataType="numeric" style={{ minWidth: '8rem' }} body={balanceBodyTemplate}/>
+                    <Column field="id" header="Id" sortable  style={{ minWidth: '10rem' }} />
+                    <Column field="name" header="Name" sortable  style={{ minWidth: '18rem' }} />
+                    <Column field="code" header="Code" sortable  style={{ minWidth: '18rem' }} />
                     <Column field="updatedOn" header="Updated On" sortable dataType="date" style={{ minWidth: '10rem' }} body={dateBodyTemplate}/>
-                    {/* <Column sortable={false}  style={{ minWidth: '8rem' }} body={profileStatusBodyTemplate} /> */}
                     <Column alignFrozen="right" frozen style={{ minWidth: '2rem' }}  body={actionBodyTemplate} />
 
                 </DataTable>

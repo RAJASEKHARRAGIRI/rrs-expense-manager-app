@@ -6,7 +6,7 @@ import { Routes,Route, Navigate, Outlet} from "react-router-dom";
 import HomeDashboardComponent from "./components/HomeDashboard"
 import Settings from "./components/Settings"
 import AppUsersList from "./components/AppUsersList"
-import ConfigExpenses from "./components/ConfigExpenses"
+import ExpenseCategories from "./components/ExpenseCategories"
 import ExpensesList from "./components/ExpensesList"
 import Profile from "./components/Profile"
 import PageNotFound from "./common/not-found"
@@ -35,7 +35,7 @@ export default function App() {
           <Route index element={<HomeDashboardComponent userInfo={userInfo}/>}/>
           <Route path="/rrsexpense/settings" element={<Settings/>}/>
           <Route path="/rrsexpense/users" element={<AppUsersList/>}/>
-          <Route path="/rrsexpense/config" element={<ConfigExpenses/>}/>
+          <Route path="/rrsexpense/categories" element={<ExpenseCategories/>}/>
           <Route path="/rrsexpense/expenses" element={<ExpensesList/>}/>
           <Route path="/rrsexpense/profile" element={<Profile userInfo={userInfo}/>}/>
           <Route path="/rrsexpense/pagenotfound" element={<PageNotFound userInfo={userInfo}/>}/>

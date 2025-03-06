@@ -5,6 +5,7 @@
       "userName": "admin",
       "fullName": "Ragiri Raja Sekhar",
       "password": "rrs63",
+      "role": "admin",
       "email": "ragirirajasekhar@gmail.com",
       "gender": "male",
       "phoneNumber": "7382016541",
@@ -169,6 +170,44 @@
       "updatedOn": "03/02/2025 10:07:07"
     }
   ],
+  "categories": [
+    {
+      "id": "1",
+      "name": "Fruits (All Types Fruits)",
+      "code": "fruits",
+      "updatedOn": "03/06/2025 01:57:05"
+    },
+    {
+      "id": "2",
+      "code": "vegetables",
+      "name": "Vegetables",
+      "updatedOn": "02/19/2024 08:28:30"
+    },
+    {
+      "id": "3",
+      "code": "meats",
+      "name": "Meats",
+      "updatedOn": "02/19/2024 08:28:30"
+    },
+    {
+      "id": "4",
+      "code": "dairy",
+      "name": "Dairy (Milk products)",
+      "updatedOn": "02/19/2024 08:28:30"
+    },
+    {
+      "id": "5",
+      "code": "snacks",
+      "name": "Snacks",
+      "updatedOn": "02/19/2024 08:28:30"
+    },
+    {
+      "id": "6",
+      "code": "kiranaShop",
+      "name": "Kirana Shop (Groceries)",
+      "updatedOn": "02/19/2024 08:28:30"
+    }
+  ],
   "expenses": [
     {
       "id": "224a",
@@ -191,6 +230,17 @@
       "notes": "",
       "updatedOn": "03/02/2025 10:46:34",
       "id": "3289"
+    },
+    {
+      "id": "3715",
+      "shopName": "Dmart",
+      "date": "2025-03-05T18:30:00.000Z",
+      "category": "dairy,snacks,kiranaShop",
+      "groceries": "[{\"name\":\"Milk\",\"code\":\"MLK\",\"category\":\"dairy\"},{\"name\":\"Ghee\",\"code\":\"GHE\",\"category\":\"dairy\"},{\"name\":\"French Fries\",\"code\":\"FRNCHFRY\",\"category\":\"snacks\"},{\"name\":\"Pizza\",\"code\":\"pizza\",\"category\":\"snacks\"},{\"name\":\"Detergent Powder (Surf/Wheel etc)\",\"code\":\"DTRPWDR\",\"category\":\"kiranaShop\"},{\"name\":\"Chili Powder\",\"code\":\"CHIPWDR\",\"category\":\"kiranaShop\"}]",
+      "amount": 4500,
+      "paymentType": "Online",
+      "notes": "Done",
+      "updatedOn": "03/06/2025 04:51:51"
     }
   ]
 }

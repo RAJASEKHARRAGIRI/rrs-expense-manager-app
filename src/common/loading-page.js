@@ -21,7 +21,7 @@ export default function Pageloading({setUser, userInfo}) {
                 navigate("/rrsexpense");
             }
             setValue(_val);
-        }, 300);
+        }, 100);
 
         return () => {
             if (interval.current) {

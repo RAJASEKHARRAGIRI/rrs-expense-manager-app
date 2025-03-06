@@ -36,3 +36,9 @@
     transform: rotate(360deg);
   }
 }
+
+
+.adminClass{
+  font-size: 9px !important;
+  color: rgb(255, 130, 130);
+}

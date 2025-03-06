@@ -41,7 +41,7 @@ export default function Navbar({ logoutUser, userInfo}) {
               </div>
               <ul className="sidebar-nav">
                   <li className="sidebar-header">
-                      Expense Manager Features
+                      Expense Manager Features <span className="badge bg-success">{userInfo?.role == "admin" ? "Admin" : "User"}</span>
                   </li>
                    <RenderNavBarItems></RenderNavBarItems>       
                   <div className="custom-hr"></div>

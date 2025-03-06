@@ -172,7 +172,7 @@ export default class HomeDashboardComponent extends React.Component {
       <>
         <CommonToastContainer />
         <div className="mb-3">
-          <h4>Admin Dashboard</h4>
+          <h4>Dashboard</h4>
         </div>
 
         <div className="row">
@@ -180,18 +180,18 @@ export default class HomeDashboardComponent extends React.Component {
             <div className="card flex-fill border-0 illustration">
               <div className="card-body p-0 d-flex flex-fill">
                 <div className="row g-0 w-100">
-                  <div className="col-6">
+                  <div className="col-8">
                     <div className="p-3 m-1">
                       <h4>Welcome Back, </h4>
                       <p className="mb-0">
                         {this.props?.userInfo
                           ? this.props?.userInfo?.fullName
                           : "Guest"}{" "}
-                        to Admin Dashboard
+                        to Expense Manager Dashboard
                       </p>
                     </div>
                   </div>
-                  <div className="col-6 align-self-end text-end">
+                  <div className="col-4 align-self-end text-end">
                     <img
                       src={require("../images/customer-support.jpg")}
                       className="img-fluid illustration-img"

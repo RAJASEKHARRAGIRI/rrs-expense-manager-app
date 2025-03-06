@@ -69,14 +69,14 @@ export default function Profile({userInfo}) {
         <div className="col-sm-12 col-xl-7 ">
           <div className="card mb-3" >
             <div className="row g-0">
-              <div className="col-md-6 col-xxl-5 col-xl-5">
-                <img style={{ minWidth: "14rem", maxWidth: "18rem" }}
+              <div className="col-md-7 col-xxl-5 col-xl-5">
+                <img 
                   src={require(`../images/${userInfoState.gender == "female" ? "profile_girl.jpg" :"profile.jpg"}`)}
-                  className="card-img-top"
+                  className="card-img-top img-fluid w-100 h-100"
                   alt="..."
                 ></img>
               </div>
-              <div className="col-md-6 col-xxl-7 col-xl-7">
+              <div className="col-md-5 col-xxl-7 col-xl-7">
                 <div className="card-body">
                   <h5 className="card-title"> {userInfoState.fullName} 
                   <a href="#" onClick={editButtonClick}><i className="fa-solid fa-edit pe-2 float-end"></i></a></h5>
@@ -88,6 +88,7 @@ export default function Profile({userInfo}) {
                     <p className="mb-1"><strong>Location : </strong> {userInfoState.location} </p>
                     <p className="mb-1"><strong>Monthly Income : </strong> Rs. {userInfoState.salary} /-</p>
                     <p className="mb-1"><strong>User Name : </strong> {userInfoState.userName} </p>
+                    <p className="mb-1"><strong>Role : </strong> {userInfoState?.role == "admin" ? "Admin" : "Normal User"} </p>
                     <p className="mb-1"><strong>Password : </strong>  {userInfoState.password}</p>
                   </div>
                 </div>

@@ -225,7 +225,7 @@ export default function ExpensesList() {
         </div>
         <div className="col-sm-4 mb-0">
           <div className="card bg-info text-white mb-0">
-            <div className="card-body mb-0" style={{textAlign:"center"}}>
+            <div className="card-body mb-0" style={{textAlign:"center", padding: "6px"}}>
               Total Amount Spent: <b>Rs. {expenses?.reduce((accumulator, object) => {return accumulator + object.amount;}, 0)} /-</b>
             </div>
           </div>
@@ -237,8 +237,8 @@ export default function ExpensesList() {
       <div className="datatable-doc-demo">
             <CommonToastContainer/>
             <div className="card">
-                <DataTable value={expenses} scrollable  paginator className="p-datatable-expenses" header={header} rows={8}  size="small"
-                    paginatorTemplate="FirstPageLink PrevPageLink PageLinks NextPageLink LastPageLink CurrentPageReport RowsPerPageDropdown" rowsPerPageOptions={[6,8,10,25,50]}
+                <DataTable value={expenses} scrollable  paginator className="p-datatable-expenses" header={header} rows={5}  size="small"
+                    paginatorTemplate="FirstPageLink PrevPageLink PageLinks NextPageLink LastPageLink CurrentPageReport RowsPerPageDropdown" rowsPerPageOptions={[5,8,10,25,50]}
                     dataKey="id" rowHover  filterDisplay="menu" loading={loading} responsiveLayout="scroll"
                     filters={filters} globalFilterFields={['shopName', 'category','groceries','notes','paymentType','date']} emptyMessage="No users found."
                     currentPageReportTemplate="Showing {first} to {last} of {totalRecords} entries">
