@@ -212,10 +212,19 @@ export default class HomeDashboardComponent extends React.Component {
                     </h4>
                     <p className="mb-2">Total Income</p>
                     <div className="mb-0">
-                      <span className="text-muted">Total savings</span>
+                    <i class="pi pi-wallet text-muted" style={{fontsize:"0.2rem"}}></i>&nbsp;
+                      <span className="text-muted">Remaining</span>
                       <span className="badge text-success me-2">
                         ₹ {this.props?.userInfo?.salary - this.state?.totalAmount }.00&nbsp;
-                        <i className="fa-solid fa-arrow-down pe-2"></i>
+                       
+                      </span>
+                    </div>
+                    <div className="mb-0">
+                    <i class="pi pi-money-bill text-muted" style={{fontsize:"0.2rem"}}></i>&nbsp;
+                      <span className="text-muted">Spent</span>
+                      <span className="badge text-success me-2">
+                        ₹ {this.state?.totalAmount }.00&nbsp;
+                       
                       </span>
                     </div>
                   </div>
@@ -231,10 +240,11 @@ export default class HomeDashboardComponent extends React.Component {
                     <h4 className="mb-2">₹ {this.state?.totalAmount}.00</h4>
                     <p className="mb-2">Total expenses</p>
                     <div className="mb-0">
+                    <i className="pi pi-shopping-cart text-muted" style={{fontsize:"0.2rem"}}></i>&nbsp;
                       <span className="text-muted">Total shoppings till</span>
                       <span className="badge text-success me-2">
                         {this.state.expensesList?.length}&nbsp;
-                        <i className="fa-solid fa-arrow-up pe-2"></i>
+                       
                       </span>
                     </div>
                   </div>
@@ -253,7 +263,7 @@ export default class HomeDashboardComponent extends React.Component {
                 <div className="flex-grow-1">
                   <Chart type="pie" height="20rem" data={this.state.chartData} options={this.state.chartOptions} className="w-full md:w-50rem" />
                   <div className="d-flex flex-row-reverse text-white">
-                    <div className="p-2 bg-info">Expenses category</div>
+                    <div className="p-2 bg-info">Category</div>
                   </div>
                 </div>
                 </div>
@@ -266,10 +276,10 @@ export default class HomeDashboardComponent extends React.Component {
             <div className="card-body py-4">
               <div className="d-flex align-items-end">
                 <div className="flex-grow-1">
-                <Chart type="doughnut" height="20rem" data={this.state.chartData1} options={this.state.chartOptions} className="w-full md:w-30rem" />
-                <div className="d-flex flex-row-reverse text-white">
-                    <div className="p-2 bg-info">Expenses payment type</div>
-                  </div>
+                <Chart type="doughnut" height="20rem" data={this.state.chartData1} options={this.state.chartOptions} className="w-full md:w-25rem" />
+                <div className="d-flex float-end text-white">
+                    <div className="p-2 bg-info">Payment type</div>
+                </div>
                 </div>
                 </div>
               </div>
