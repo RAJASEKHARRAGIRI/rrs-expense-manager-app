@@ -27,6 +27,11 @@ export default function Navbar({ logoutUser, userInfo}) {
     navigate("/");
   };
 
+  const navigateToRepo = () => {
+    window.open(
+        "https://github.com/RAJASEKHARRAGIRI/rrs-expense-manager-app", "_blank");
+  };
+
   if (localStorage.getItem("light") === "set") {
     document.documentElement.setAttribute("data-bs-theme", "dark");
   }
@@ -45,6 +50,12 @@ export default function Navbar({ logoutUser, userInfo}) {
                   </li>
                    <RenderNavBarItems></RenderNavBarItems>       
                   <div className="custom-hr"></div>
+                  <li className="sidebar-item">
+                      <a className="sidebar-link" onClick={navigateToRepo}>
+                      <i class="fa-solid fa-circle-info"></i>&nbsp;
+                          &nbsp;About
+                      </a>
+                  </li>
                   <li className="sidebar-item">
                       <a className="sidebar-link" onClick={handleLogout}>
                           <i className="fa-solid fa-power-off pe-2"></i>

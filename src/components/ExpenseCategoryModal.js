@@ -132,7 +132,7 @@ export default function ExpenseCategoryModal({ categoryInfo, closeCategoryModal 
                   required
                   pattern="^\S+$" 
                 />
-                <label>res</label>
+                <label className="text-muted" style={{fontSize:"12px"}}>Note: Category Code should be single word and unique</label>
               </div>
 
               <div className="d-grid gap-2 d-md-flex justify-content-md-center">
