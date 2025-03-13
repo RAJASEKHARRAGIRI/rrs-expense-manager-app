@@ -52,7 +52,7 @@ export default function Navbar({ logoutUser, userInfo}) {
                   <div className="custom-hr"></div>
                   <li className="sidebar-item">
                       <a className="sidebar-link" onClick={navigateToRepo}>
-                      <i class="fa-solid fa-circle-info"></i>&nbsp;
+                      <i className="fa-solid fa-circle-info"></i>&nbsp;
                           &nbsp;About
                       </a>
                   </li>

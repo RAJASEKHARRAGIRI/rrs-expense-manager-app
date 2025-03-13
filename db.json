@@ -172,16 +172,92 @@
   ],
   "categories": [
     {
-      "id": "1",
-      "name": "Fruits (All Types Fruits)",
+      "items": [
+        {
+          "id": "11",
+          "name": "Mango 1",
+          "code": "MNG1",
+          "category": "fruits"
+        },
+        {
+          "id": "1",
+          "name": "Mango",
+          "code": "MNG",
+          "category": "fruits"
+        },
+        {
+          "id": "2",
+          "name": "Banana",
+          "code": "BNA",
+          "category": "fruits"
+        },
+        {
+          "id": "3",
+          "name": "Grapes",
+          "code": "GRP",
+          "category": "fruits"
+        },
+        {
+          "id": "4",
+          "name": "Apple",
+          "code": "APL",
+          "category": "fruits"
+        },
+        {
+          "id": "5",
+          "name": "Coconut",
+          "code": "CCN",
+          "category": "fruits"
+        },
+        {
+          "id": "6",
+          "name": "Pineapple",
+          "code": "PNA",
+          "category": "fruits"
+        },
+        {
+          "id": "7",
+          "name": "Orange",
+          "code": "ORG",
+          "category": "fruits"
+        },
+        {
+          "id": "8",
+          "name": "Papaya",
+          "code": "PPA",
+          "category": "fruits"
+        },
+        {
+          "id": "9",
+          "name": "Watermelon",
+          "code": "WTM",
+          "category": "fruits"
+        },
+        {
+          "id": "10",
+          "name": "Pomegranate",
+          "code": "PMG",
+          "category": "fruits"
+        }
+      ],
       "code": "fruits",
-      "updatedOn": "03/06/2025 01:57:05"
+      "name": "Fruits",
+      "updatedOn": "03/13/2025 12:40:35",
+      "id": "1"
     },
     {
       "id": "2",
       "code": "vegetables",
       "name": "Vegetables",
-      "updatedOn": "02/19/2024 08:28:30"
+      "updatedOn": "03/13/2025 02:10:40",
+      "items": [
+        {
+          "id": "1",
+          "name": "Tomato",
+          "code": "tomato",
+          "category": "vegetables"
+        }
+      ]
     },
     {
       "id": "3",

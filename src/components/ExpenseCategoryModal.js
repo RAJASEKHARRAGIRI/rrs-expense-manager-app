@@ -89,7 +89,7 @@ export default function ExpenseCategoryModal({ categoryInfo, closeCategoryModal 
       <Dialog
         header={categoryInfoState.isAdd ? "Add category" : "Update category"}
         visible={closeModal1}
-        style={{ width: "30vw" }}
+        style={{ width: "40vw" }}
         onHide={() => closeModal(false)}
         className="prime_dialog"
       // footer={footerContent}

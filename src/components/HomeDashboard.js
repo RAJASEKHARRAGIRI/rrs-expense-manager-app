@@ -212,7 +212,7 @@ export default class HomeDashboardComponent extends React.Component {
                     </h4>
                     <p className="mb-2">Total Income</p>
                     <div className="mb-0">
-                    <i class="pi pi-wallet text-muted" style={{fontsize:"0.2rem"}}></i>&nbsp;
+                    <i className="pi pi-wallet text-muted" style={{fontsize:"0.2rem"}}></i>&nbsp;
                       <span className="text-muted">Remaining</span>
                       <span className="badge text-success me-2">
                         ₹ {this.props?.userInfo?.salary - this.state?.totalAmount }.00&nbsp;
@@ -220,7 +220,7 @@ export default class HomeDashboardComponent extends React.Component {
                       </span>
                     </div>
                     <div className="mb-0">
-                    <i class="pi pi-money-bill text-muted" style={{fontsize:"0.2rem"}}></i>&nbsp;
+                    <i className="pi pi-money-bill text-muted" style={{fontsize:"0.2rem"}}></i>&nbsp;
                       <span className="text-muted">Spent</span>
                       <span className="badge text-success me-2">
                         ₹ {this.state?.totalAmount }.00&nbsp;

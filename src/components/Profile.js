@@ -79,7 +79,7 @@ export default function Profile({userInfo}) {
               <div className="col-md-5 col-xxl-7 col-xl-7">
                 <div className="card-body">
                   <h5 className="card-title"> {userInfoState.fullName} 
-                  <a href="#" onClick={editButtonClick} title="Edit User Profile"><i class="pi pi-user-edit text-muted float-end" style={{fontsize:"0.2rem"}}></i></a></h5>
+                  <a href="#" onClick={editButtonClick} title="Edit User Profile"><i className="pi pi-user-edit text-muted float-end" style={{fontsize:"0.2rem"}}></i></a></h5>
                   
                   <div className="card-text">
                     <p className="mb-1"><strong>Gender : </strong> {userInfoState.gender} </p>
