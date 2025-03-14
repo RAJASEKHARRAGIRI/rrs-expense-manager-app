@@ -174,149 +174,668 @@
     {
       "items": [
         {
-          "id": "11",
-          "name": "Mango 1",
-          "code": "MNG1",
-          "category": "fruits"
-        },
-        {
           "id": "1",
-          "name": "Mango",
-          "code": "MNG",
+          "productName": "Mango",
+          "productCode": "MNG",
           "category": "fruits"
         },
         {
           "id": "2",
-          "name": "Banana",
-          "code": "BNA",
+          "productName": "Banana",
+          "productCode": "BNA",
           "category": "fruits"
         },
         {
           "id": "3",
-          "name": "Grapes",
-          "code": "GRP",
+          "productName": "Apple",
+          "productCode": "APL",
           "category": "fruits"
         },
         {
           "id": "4",
-          "name": "Apple",
-          "code": "APL",
+          "productName": "Orange",
+          "productCode": "ORG",
           "category": "fruits"
         },
         {
           "id": "5",
-          "name": "Coconut",
-          "code": "CCN",
+          "productName": "Grapes",
+          "productCode": "GRP",
           "category": "fruits"
         },
         {
           "id": "6",
-          "name": "Pineapple",
-          "code": "PNA",
+          "productName": "Pineapple",
+          "productCode": "PNP",
           "category": "fruits"
         },
         {
           "id": "7",
-          "name": "Orange",
-          "code": "ORG",
+          "productName": "Strawberry",
+          "productCode": "STB",
           "category": "fruits"
         },
         {
           "id": "8",
-          "name": "Papaya",
-          "code": "PPA",
+          "productName": "Watermelon",
+          "productCode": "WTM",
           "category": "fruits"
         },
         {
           "id": "9",
-          "name": "Watermelon",
-          "code": "WTM",
+          "productName": "Papaya",
+          "productCode": "PPA",
           "category": "fruits"
         },
         {
           "id": "10",
-          "name": "Pomegranate",
-          "code": "PMG",
+          "productName": "Peach",
+          "productCode": "PCH",
+          "category": "fruits"
+        },
+        {
+          "id": "12",
+          "productName": "Pear",
+          "productCode": "PR",
+          "category": "fruits"
+        },
+        {
+          "id": "13",
+          "productName": "Cherry",
+          "productCode": "CHR",
+          "category": "fruits"
+        },
+        {
+          "id": "14",
+          "productName": "Kiwi",
+          "productCode": "KIW",
+          "category": "fruits"
+        },
+        {
+          "id": "15",
+          "productName": "Blueberry",
+          "productCode": "BLB",
           "category": "fruits"
         }
       ],
       "code": "fruits",
       "name": "Fruits",
-      "updatedOn": "03/13/2025 12:40:35",
+      "updatedOn": "03/14/2025 12:27:58",
       "id": "1"
     },
     {
       "id": "2",
       "code": "vegetables",
       "name": "Vegetables",
-      "updatedOn": "03/13/2025 02:10:40",
+      "updatedOn": "03/14/2025 12:28:56",
       "items": [
         {
           "id": "1",
-          "name": "Tomato",
-          "code": "tomato",
+          "productName": "Tomato",
+          "productCode": "TMT",
+          "category": "vegetables"
+        },
+        {
+          "id": "2",
+          "productName": "Carrot",
+          "productCode": "CRT",
+          "category": "vegetables"
+        },
+        {
+          "id": "3",
+          "productName": "Potato",
+          "productCode": "POT",
+          "category": "vegetables"
+        },
+        {
+          "id": "4",
+          "productName": "Onion",
+          "productCode": "ONN",
+          "category": "vegetables"
+        },
+        {
+          "id": "5",
+          "productName": "Cabbage",
+          "productCode": "CBG",
+          "category": "vegetables"
+        },
+        {
+          "id": "6",
+          "productName": "Cauliflower",
+          "productCode": "CFL",
+          "category": "vegetables"
+        },
+        {
+          "id": "7",
+          "productName": "Spinach",
+          "productCode": "SPN",
+          "category": "vegetables"
+        },
+        {
+          "id": "8",
+          "productName": "Broccoli",
+          "productCode": "BRC",
+          "category": "vegetables"
+        },
+        {
+          "id": "9",
+          "productName": "Capsicum",
+          "productCode": "CPS",
+          "category": "vegetables"
+        },
+        {
+          "id": "10",
+          "productName": "Cucumber",
+          "productCode": "CMB",
+          "category": "vegetables"
+        },
+        {
+          "id": "11",
+          "productName": "Pumpkin",
+          "productCode": "PMK",
+          "category": "vegetables"
+        },
+        {
+          "id": "12",
+          "productName": "Radish",
+          "productCode": "RDS",
+          "category": "vegetables"
+        },
+        {
+          "id": "13",
+          "productName": "Beetroot",
+          "productCode": "BTR",
+          "category": "vegetables"
+        },
+        {
+          "id": "14",
+          "productName": "Brinjal",
+          "productCode": "BRJ",
+          "category": "vegetables"
+        },
+        {
+          "id": "15",
+          "productName": "Ladyfinger",
+          "productCode": "LDF",
           "category": "vegetables"
         }
       ]
     },
     {
-      "id": "3",
-      "code": "meats",
+      "id": "6ce1",
       "name": "Meats",
-      "updatedOn": "02/19/2024 08:28:30"
+      "code": "meats",
+      "items": [
+        {
+          "id": "1",
+          "productName": "Fish",
+          "productCode": "FSH",
+          "category": "meats"
+        },
+        {
+          "id": "2",
+          "productName": "Chicken",
+          "productCode": "CHKN",
+          "category": "meats"
+        },
+        {
+          "id": "3",
+          "productName": "Beef",
+          "productCode": "BEF",
+          "category": "meats"
+        },
+        {
+          "id": "4",
+          "productName": "Pork",
+          "productCode": "PRK",
+          "category": "meats"
+        },
+        {
+          "id": "5",
+          "productName": "Lamb",
+          "productCode": "LMB",
+          "category": "meats"
+        },
+        {
+          "id": "6",
+          "productName": "Turkey",
+          "productCode": "TRK",
+          "category": "meats"
+        },
+        {
+          "id": "7",
+          "productName": "Duck",
+          "productCode": "DUK",
+          "category": "meats"
+        },
+        {
+          "id": "8",
+          "productName": "Goat/Sheep",
+          "productCode": "GOT",
+          "category": "meats"
+        },
+        {
+          "id": "9",
+          "productName": "Crab",
+          "productCode": "CRB",
+          "category": "meats"
+        },
+        {
+          "id": "10",
+          "productName": "Prawn",
+          "productCode": "PRN",
+          "category": "meats"
+        },
+        {
+          "id": "11",
+          "productName": "Lobster",
+          "productCode": "LBS",
+          "category": "meats"
+        },
+        {
+          "id": "12",
+          "productName": "Venison",
+          "productCode": "VEN",
+          "category": "meats"
+        },
+        {
+          "id": "13",
+          "productName": "Quail",
+          "productCode": "QL",
+          "category": "meats"
+        },
+        {
+          "id": "14",
+          "productName": "Squid",
+          "productCode": "SQD",
+          "category": "meats"
+        },
+        {
+          "id": "15",
+          "productName": "Octopus",
+          "productCode": "OCT",
+          "category": "meats"
+        }
+      ],
+      "updatedOn": "03/14/2025 12:31:22"
     },
     {
-      "id": "4",
+      "id": "548c",
+      "name": "Dairy",
       "code": "dairy",
-      "name": "Dairy (Milk products)",
-      "updatedOn": "02/19/2024 08:28:30"
+      "items": [
+        {
+          "id": "1",
+          "productName": "Milk",
+          "productCode": "MLK",
+          "category": "dairy"
+        },
+        {
+          "id": "2",
+          "productName": "Cheese",
+          "productCode": "CHS",
+          "category": "dairy"
+        },
+        {
+          "id": "3",
+          "productName": "Butter",
+          "productCode": "BTR",
+          "category": "dairy"
+        },
+        {
+          "id": "4",
+          "productName": "Yogurt",
+          "productCode": "YGT",
+          "category": "dairy"
+        },
+        {
+          "id": "5",
+          "productName": "Cream",
+          "productCode": "CRM",
+          "category": "dairy"
+        },
+        {
+          "id": "6",
+          "productName": "Curd",
+          "productCode": "CRD",
+          "category": "dairy"
+        },
+        {
+          "id": "7",
+          "productName": "Buttermilk",
+          "productCode": "BTM",
+          "category": "dairy"
+        },
+        {
+          "id": "8",
+          "productName": "Ghee",
+          "productCode": "GHE",
+          "category": "dairy"
+        },
+        {
+          "id": "9",
+          "productName": "Cottage Cheese",
+          "productCode": "CTC",
+          "category": "dairy"
+        },
+        {
+          "id": "10",
+          "productName": "Paneer",
+          "productCode": "PNR",
+          "category": "dairy"
+        },
+        {
+          "id": "11",
+          "productName": "Whipped Cream",
+          "productCode": "WPC",
+          "category": "dairy"
+        },
+        {
+          "id": "12",
+          "productName": "Condensed Milk",
+          "productCode": "CDM",
+          "category": "dairy"
+        },
+        {
+          "id": "13",
+          "productName": "Powdered Milk",
+          "productCode": "PDM",
+          "category": "dairy"
+        },
+        {
+          "id": "14",
+          "productName": "Sour Cream",
+          "productCode": "SRC",
+          "category": "dairy"
+        },
+        {
+          "id": "15",
+          "productName": "Kefir",
+          "productCode": "KFR",
+          "category": "dairy"
+        }
+      ],
+      "updatedOn": "03/14/2025 12:33:10"
     },
     {
-      "id": "5",
-      "code": "snacks",
+      "id": "00b7",
       "name": "Snacks",
-      "updatedOn": "02/19/2024 08:28:30"
+      "code": "snacks",
+      "items": [
+        {
+          "id": "1",
+          "productName": "Pizza",
+          "productCode": "PZA",
+          "category": "snacks"
+        },
+        {
+          "id": "2",
+          "productName": "Pani Poori",
+          "productCode": "PANPRI",
+          "category": "snacks"
+        },
+        {
+          "id": "3",
+          "productName": "Burger",
+          "productCode": "BRG",
+          "category": "snacks"
+        },
+        {
+          "id": "4",
+          "productName": "French Fries",
+          "productCode": "FRF",
+          "category": "snacks"
+        },
+        {
+          "id": "5",
+          "productName": "Samosa",
+          "productCode": "SMS",
+          "category": "snacks"
+        },
+        {
+          "id": "6",
+          "productName": "Sandwich",
+          "productCode": "SND",
+          "category": "snacks"
+        },
+        {
+          "id": "7",
+          "productName": "Pakora",
+          "productCode": "PKR",
+          "category": "snacks"
+        },
+        {
+          "id": "8",
+          "productName": "Spring Rolls",
+          "productCode": "SPR",
+          "category": "snacks"
+        },
+        {
+          "id": "9",
+          "productName": "Nachos",
+          "productCode": "NCH",
+          "category": "snacks"
+        },
+        {
+          "id": "10",
+          "productName": "Popcorn",
+          "productCode": "PPC",
+          "category": "snacks"
+        },
+        {
+          "id": "11",
+          "productName": "Momos",
+          "productCode": "MMS",
+          "category": "snacks"
+        },
+        {
+          "id": "12",
+          "productName": "Bhel Puri",
+          "productCode": "BHL",
+          "category": "snacks"
+        },
+        {
+          "id": "13",
+          "productName": "Kachori",
+          "productCode": "KCH",
+          "category": "snacks"
+        },
+        {
+          "id": "14",
+          "productName": "Chips",
+          "productCode": "CHP",
+          "category": "snacks"
+        },
+        {
+          "id": "15",
+          "productName": "Hot Dog",
+          "productCode": "HTD",
+          "category": "snacks"
+        }
+      ],
+      "updatedOn": "03/14/2025 12:35:11"
     },
     {
-      "id": "6",
-      "code": "kiranaShop",
-      "name": "Kirana Shop (Groceries)",
-      "updatedOn": "02/19/2024 08:28:30"
+      "id": "1ab1",
+      "name": "Kirana Shop",
+      "code": "kiranashop",
+      "items": [
+        {
+          "id": "1",
+          "productName": "Rice",
+          "productCode": "RICE",
+          "category": "kiranashop"
+        },
+        {
+          "id": "2",
+          "productName": "Dal",
+          "productCode": "DAL",
+          "category": "kiranashop"
+        },
+        {
+          "id": "3",
+          "productName": "Tooth Paste",
+          "productCode": "TPST",
+          "category": "kiranashop"
+        },
+        {
+          "id": "4",
+          "productName": "Sugar",
+          "productCode": "SGR",
+          "category": "kiranashop"
+        },
+        {
+          "id": "5",
+          "productName": "Salt",
+          "productCode": "SLT",
+          "category": "kiranashop"
+        },
+        {
+          "id": "6",
+          "productName": "Soap",
+          "productCode": "SOAP",
+          "category": "kiranashop"
+        },
+        {
+          "id": "7",
+          "productName": "Shampoo",
+          "productCode": "SHMP",
+          "category": "kiranashop"
+        },
+        {
+          "id": "8",
+          "productName": "Cooking Oil",
+          "productCode": "COIL",
+          "category": "kiranashop"
+        },
+        {
+          "id": "9",
+          "productName": "Tea Powder",
+          "productCode": "TEA",
+          "category": "kiranashop"
+        },
+        {
+          "id": "10",
+          "productName": "Coffee Powder",
+          "productCode": "COFF",
+          "category": "kiranashop"
+        },
+        {
+          "id": "11",
+          "productName": "Flour (Atta)",
+          "productCode": "ATTA",
+          "category": "kiranashop"
+        },
+        {
+          "id": "12",
+          "productName": "Biscuits",
+          "productCode": "BIS",
+          "category": "kiranashop"
+        },
+        {
+          "id": "13",
+          "productName": "Detergent Powder",
+          "productCode": "DTRG",
+          "category": "kiranashop"
+        },
+        {
+          "id": "14",
+          "productName": "Dishwash Liquid",
+          "productCode": "DISH",
+          "category": "kiranashop"
+        },
+        {
+          "id": "15",
+          "productName": "Spices",
+          "productCode": "SPCS",
+          "category": "kiranashop"
+        },
+        {
+          "id": "16",
+          "productName": "Chilli Powder",
+          "productCode": "CHP",
+          "category": "kiranashop"
+        },
+        {
+          "id": "17",
+          "productName": "Turmeric Powder",
+          "productCode": "TMP",
+          "category": "kiranashop"
+        },
+        {
+          "id": "18",
+          "productName": "Dry Coconut",
+          "productCode": "DCOC",
+          "category": "kiranashop"
+        },
+        {
+          "id": "19",
+          "productName": "Maggi Noodles",
+          "productCode": "MAGGI",
+          "category": "kiranashop"
+        },
+        {
+          "id": "20",
+          "productName": "Rava (Semolina)",
+          "productCode": "RAVA",
+          "category": "kiranashop"
+        },
+        {
+          "id": "21",
+          "productName": "Vermicelli",
+          "productCode": "VERM",
+          "category": "kiranashop"
+        },
+        {
+          "id": "22",
+          "productName": "Mustard Seeds",
+          "productCode": "MUST",
+          "category": "kiranashop"
+        },
+        {
+          "id": "23",
+          "productName": "Cumin Seeds",
+          "productCode": "CUMN",
+          "category": "kiranashop"
+        },
+        {
+          "id": "24",
+          "productName": "Black Pepper",
+          "productCode": "BLKP",
+          "category": "kiranashop"
+        },
+        {
+          "id": "25",
+          "productName": "Tamarind",
+          "productCode": "TAMR",
+          "category": "kiranashop"
+        }
+      ],
+      "updatedOn": "03/14/2025 12:38:25"
     }
   ],
   "expenses": [
     {
-      "id": "224a",
-      "shopName": "kiran",
-      "date": "2025-03-01T18:30:00.000Z",
-      "category": "fruits,vegetables,meats",
-      "groceries": "[{\"name\":\"Grapes\",\"code\":\"GRP\",\"category\":\"fruits\"},{\"name\":\"Banana\",\"code\":\"BNA\",\"category\":\"fruits\"},{\"name\":\"Mango\",\"code\":\"MNG\",\"category\":\"fruits\"}]",
-      "amount": 230,
-      "paymentType": "Cash",
-      "notes": "kk",
-      "updatedOn": "03/02/2025 10:42:34"
-    },
-    {
-      "shopName": "more",
-      "date": "2025-03-03T18:30:00.000Z",
-      "category": "snacks,kiranaShop",
-      "groceries": "[{\"name\":\"Onions\",\"code\":\"ONI\",\"category\":\"vegetables\"},{\"name\":\"Potato\",\"code\":\"POT\",\"category\":\"vegetables\"}]",
-      "amount": 600,
+      "id": "8a30",
+      "shopName": "Monthly shopping",
+      "date": "2025-03-13T18:30:00.000Z",
+      "category": "fruits,vegetables,meats,kiranashop",
+      "groceries": "[{\"id\":\"1\",\"productName\":\"Mango\",\"productCode\":\"MNG\",\"category\":\"fruits\"},{\"id\":\"2\",\"productName\":\"Banana\",\"productCode\":\"BNA\",\"category\":\"fruits\"},{\"id\":\"15\",\"productName\":\"Ladyfinger\",\"productCode\":\"LDF\",\"category\":\"vegetables\"},{\"id\":\"14\",\"productName\":\"Brinjal\",\"productCode\":\"BRJ\",\"category\":\"vegetables\"},{\"id\":\"8\",\"productName\":\"Goat/Sheep\",\"productCode\":\"GOT\",\"category\":\"meats\"},{\"id\":\"1\",\"productName\":\"Milk\",\"productCode\":\"MLK\",\"category\":\"dairy\"},{\"id\":\"6\",\"productName\":\"Curd\",\"productCode\":\"CRD\",\"category\":\"dairy\"},{\"id\":\"2\",\"productName\":\"Pani Poori\",\"productCode\":\"PANPRI\",\"category\":\"snacks\"},{\"id\":\"8\",\"productName\":\"Spring Rolls\",\"productCode\":\"SPR\",\"category\":\"snacks\"},{\"id\":\"1\",\"productName\":\"Rice\",\"productCode\":\"RICE\",\"category\":\"kiranashop\"},{\"id\":\"2\",\"productName\":\"Dal\",\"productCode\":\"DAL\",\"category\":\"kiranashop\"},{\"id\":\"3\",\"productName\":\"Tooth Paste\",\"productCode\":\"TPST\",\"category\":\"kiranashop\"},{\"id\":\"6\",\"productName\":\"Soap\",\"productCode\":\"SOAP\",\"category\":\"kiranashop\"},{\"id\":\"7\",\"productName\":\"Shampoo\",\"productCode\":\"SHMP\",\"category\":\"kiranashop\"},{\"id\":\"16\",\"productName\":\"Chilli Powder\",\"productCode\":\"CHP\",\"category\":\"kiranashop\"},{\"id\":\"18\",\"productName\":\"Dry Coconut\",\"productCode\":\"DCOC\",\"category\":\"kiranashop\"}]",
+      "amount": 5999,
       "paymentType": "Online",
-      "notes": "",
-      "updatedOn": "03/02/2025 10:46:34",
-      "id": "3289"
+      "notes": "all done",
+      "updatedOn": "03/14/2025 12:40:05"
     },
     {
-      "id": "3715",
+      "id": "1d20",
       "shopName": "Dmart",
-      "date": "2025-03-05T18:30:00.000Z",
-      "category": "dairy,snacks,kiranaShop",
-      "groceries": "[{\"name\":\"Milk\",\"code\":\"MLK\",\"category\":\"dairy\"},{\"name\":\"Ghee\",\"code\":\"GHE\",\"category\":\"dairy\"},{\"name\":\"French Fries\",\"code\":\"FRNCHFRY\",\"category\":\"snacks\"},{\"name\":\"Pizza\",\"code\":\"pizza\",\"category\":\"snacks\"},{\"name\":\"Detergent Powder (Surf/Wheel etc)\",\"code\":\"DTRPWDR\",\"category\":\"kiranaShop\"},{\"name\":\"Chili Powder\",\"code\":\"CHIPWDR\",\"category\":\"kiranaShop\"}]",
-      "amount": 4500,
-      "paymentType": "Online",
-      "notes": "Done",
-      "updatedOn": "03/06/2025 04:51:51"
+      "date": "2025-03-12T18:30:00.000Z",
+      "category": "kiranashop,snacks",
+      "groceries": "[{\"id\":\"23\",\"productName\":\"Cumin Seeds\",\"productCode\":\"CUMN\",\"category\":\"kiranashop\"},{\"id\":\"22\",\"productName\":\"Mustard Seeds\",\"productCode\":\"MUST\",\"category\":\"kiranashop\"},{\"id\":\"17\",\"productName\":\"Turmeric Powder\",\"productCode\":\"TMP\",\"category\":\"kiranashop\"},{\"id\":\"16\",\"productName\":\"Chilli Powder\",\"productCode\":\"CHP\",\"category\":\"kiranashop\"},{\"id\":\"2\",\"productName\":\"Dal\",\"productCode\":\"DAL\",\"category\":\"kiranashop\"},{\"id\":\"1\",\"productName\":\"Rice\",\"productCode\":\"RICE\",\"category\":\"kiranashop\"},{\"id\":\"2\",\"productName\":\"Cheese\",\"productCode\":\"CHS\",\"category\":\"dairy\"}]",
+      "amount": 3000,
+      "paymentType": "Cash",
+      "notes": "",
+      "updatedOn": "03/14/2025 12:48:50"
     }
   ]
 }

@@ -24,6 +24,9 @@ import { ConfirmDialog, confirmDialog } from 'primereact/confirmdialog';
 export default function ExpensesList() {
   const [editExpenses, setEditExpenses] = useState({showModal: false});
   const [currentPopupRow, setCurrentPopupRow] = useState('');
+
+  const [categoriesList, setCategoriesList] = useState(null);
+  
   const op = useRef(null);
   let rowId = null;
 
@@ -34,7 +37,21 @@ export default function ExpensesList() {
 
     useEffect(() => {        
         fetchExpenses();
+        fetchCategoriesList();
     }, []);
+
+      const fetchCategoriesList = () => {
+            fetch(`${AppConstants.jsonServerApiUrl}/categories`)
+            .then((res) => {
+              return res.json();
+            })
+            .then((res) => {
+              setCategoriesList(res); 
+            })
+            .catch((error) => {      
+              toast.error(`${error.message}, Failed to fetch categories.`);
+            });
+        }
 
     const fetchExpenses = () => {
         fetch(`${AppConstants.jsonServerApiUrl}/expenses`)
@@ -121,7 +138,7 @@ export default function ExpensesList() {
       let result ="";
       groceries = JSON.parse(groceries);
       groceries?.map((grocery)=>{
-        result += grocery.name+", "
+        result += grocery.productName+", "
       })
       return result.slice(0, -2); 
     }
@@ -137,9 +154,9 @@ export default function ExpensesList() {
     const getGroceryCategoryDetailsByCode = (category) => {
       let result ="";
       category.split(",").map((categoryCode)=>{
-        let obj = AppConstants.groceries.find(x => x.code === categoryCode);
+        let obj = categoriesList.find(x => x.code === categoryCode);
         if (obj) {
-          result += obj.label+", "
+          result += obj.name+", "
         }
       })
       return result.slice(0, -2); 

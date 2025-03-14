@@ -28,8 +28,8 @@ export default function ExpenseSubCategoryModal({ categoryInfo, closeCategoryMod
             } else {
               document.getElementById("categoryJson").value =  JSON.stringify([{
                 "id": "Add unique id (number)",
-                "name": "Add product name here (string)",
-                "code": "Add unique product code (string)",
+                "productName": "Add product name here (string)",
+                "productCode": "Add unique product code (string)",
                 "category": categoryInfoState.code //fixed
               },], null, 2)
             }

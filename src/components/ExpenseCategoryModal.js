@@ -18,6 +18,7 @@ export default function ExpenseCategoryModal({ categoryInfo, closeCategoryModal 
     let payload = {
       name: data.get("categoryName"),
       code: data.get("code"),
+      items: [],
       updatedOn: CommonFunctions.GetCurrentDateTime(),
     };
 
@@ -128,7 +129,6 @@ export default function ExpenseCategoryModal({ categoryInfo, closeCategoryModal 
                   placeholder="Enter category code"
                   name="code"
                   autoComplete="off"
-                  autoFocus
                   required
                   pattern="^\S+$" 
                 />

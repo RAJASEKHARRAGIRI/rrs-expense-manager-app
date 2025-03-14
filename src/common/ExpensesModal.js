@@ -20,17 +20,34 @@ export default function ExpensesModal({ expensesInfo, closeExpensesModal }) {
   const [selectedExpenses, setSelectedExpenses] = useState(null);
   const [expensesCategory, setExpensesCategory] = useState([]);
   const [paymentType, setPaymentType] = useState('Cash');
+
+  const [categoriesList, setCategoriesList] = useState(null);
+
   let isFirstLoad = true;
   let isEdit = expensesInfoState?.id > 0 ? true : false
   
   useEffect(() => {  
     isFirstLoad = !isFirstLoad;  
+    fetchCategoriesList();
     if(expensesInfoState?.shopName && isFirstLoad) {
       setTimeout(() => {
         loadFormData();
       }, 100);
     }
   }, []);
+
+  const fetchCategoriesList = () => {
+        fetch(`${AppConstants.jsonServerApiUrl}/categories`)
+        .then((res) => {
+          return res.json();
+        })
+        .then((res) => {
+          setCategoriesList(res); 
+        })
+        .catch((error) => {      
+          toast.error(`${error.message}, Failed to fetch categories.`);
+        });
+    }
 
   const loadFormData = () => {
     formik.setFieldValue('shopname', expensesInfoState.shopName)
@@ -53,7 +70,6 @@ export default function ExpensesModal({ expensesInfo, closeExpensesModal }) {
     enableReinitialize: true,
     initialValues: initialValuesData,
     onSubmit:(data) =>{
-      console.log("helo");
       handleSubmit(data);
     }
   });
@@ -118,19 +134,12 @@ export default function ExpensesModal({ expensesInfo, closeExpensesModal }) {
     toast.info(`Form cleared successfully.`);
   };
 
-  useEffect(() => {    
-    if(expensesInfoState) {
-      setTimeout(() => {
-        //loadFormData();
-      }, 100);
-    }
-  }, []);
 
   const groupedItemTemplate = (option) => {
     return (
         <div className="flex align-items-center">
-            <img alt={option.label} src="https://cdn-icons-png.flaticon.com/512/135/135763.png" className={`mr-2 flag flag-${option.code.toLowerCase()}`} style={{ width: '18px' }} />
-            <div>{option.label}</div>
+            <img alt={option.name} src="https://cdn-icons-png.flaticon.com/512/135/135763.png" className={`mr-2 flag flag-${option.code.toLowerCase()}`} style={{ width: '18px' }} />
+            <div>{option.name}</div>
         </div>
     );
 };
@@ -194,11 +203,11 @@ export default function ExpensesModal({ expensesInfo, closeExpensesModal }) {
             <div className="col-sm-12">
               <label htmlFor="category" className="form-label-class mb-2">Category</label>
               <div className="flex flex-wrap gap-3 mb-3 justify-content-start">
-                {AppConstants.groceries.map(function(value, index){
+                {categoriesList?.map(function(value, index){
                   return (
                     <div className="flex align-items-center" key={value.code}>
                       <Checkbox inputId={`groceryType${index+1}`} name="groceryType" value={value?.code} onChange={(e) => filterExpensesListOnType(e)} checked={expensesCategory.includes(value?.code)} />
-                      <label htmlFor={`groceryType${index+1}`} className="ml-2">{value?.label}</label>
+                      <label htmlFor={`groceryType${index+1}`} className="ml-2">{value?.name}</label>
                     </div>
                   )
                 })}
@@ -209,8 +218,8 @@ export default function ExpensesModal({ expensesInfo, closeExpensesModal }) {
             <div className="col-sm-12">
                   <div className="flex flex-column gap-2 mb-3">
                   <label htmlFor="groc_list" className="form-label-class">Groceries</label>
-                    <MultiSelect value={selectedExpenses} options={AppConstants.groceries} onChange={(e) => setSelectedExpenses(e.value)} 
-                    optionLabel="name" optionGroupLabel="label" optionGroupChildren="items" optionGroupTemplate={groupedItemTemplate}
+                    <MultiSelect value={selectedExpenses} options={categoriesList} onChange={(e) => setSelectedExpenses(e.value)} 
+                    optionLabel="productName" optionGroupLabel="name" optionGroupChildren="items" optionGroupTemplate={groupedItemTemplate}
                     placeholder="Select Groceries" display="chip" className="w-full sm:w-60rem" filter panelFooterTemplate={panelFooterTemplate}/>
                   </div>
               </div>

@@ -56,7 +56,6 @@ export default function ExpenseCategories() {
     }
 
     function deleteCategory(event, rowData) {
-        debugger
             event.preventDefault();
             rowId = rowData.id
             confirmDialog({
