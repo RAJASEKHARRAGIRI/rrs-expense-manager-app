@@ -11,6 +11,7 @@ export default function ExpenseCategoryModal({ categoryInfo, closeCategoryModal 
   const [categoryInfoState, setCategoryInfoState] = useState(categoryInfo);
   const [closeModal1, setCloseModal1] = useState(true);
 
+  //comment: This component is used to add or update expense categories.
 
   const handleSubmit = (event) => {
     event.preventDefault();
